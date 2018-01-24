@@ -159,8 +159,8 @@ namespace cobit_robot {
 	 *  Read ultrasonic sensor 
 	 */
     //% weight=90
-    //% blockId="cobit_readUltraSonic" block="read Ultrasoninc sensor with trigger %trigger| and ech %echo|"
-    export function readUltraSonic(triggerPin: DigitalPin, echoPin: DigitalPin): number {
+    //% blockId="cobit_readUltraSonic" block="read Ultrasoninc sensor with trigger P1 echo P2"
+    export function readUltraSonic(): number {
         let value = 0
         pins.digitalWritePin(DigitalPin.P1, 0)
         basic.pause(2)
